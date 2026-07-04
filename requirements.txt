@@ -1,0 +1,13 @@
+confluent-kafka
+pandas
+pydantic
+pyspark==4.0.1
+delta-spark==4.3.0
+great_expectations==0.18.21
+qdrant-client
+sentence-transformers
+rank-bm25
+openlineage-python
+groq
+kagglehub
+apache-airflow
