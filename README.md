@@ -1,5 +1,5 @@
 #Program Name: MODERN RATA ENGINEERING FOR AI SYSTEMS – SADAIA ACADEMY
-#Team Member: BUTHINA ALDHAFIAN , RAZAN ASIRI< HIND ALZAHRANI .
+#Team Member: BUTHINA ALDHAFIAN, RAZAN ASIRI, HIND ALZAHRANI.
 # Real-Time Customer Support Intelligence Platform
 
 This capstone project uses the Kaggle **Customer Support on Twitter** dataset to build an end-to-end customer support intelligence platform.
