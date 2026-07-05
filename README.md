@@ -1,5 +1,5 @@
-# Program Name: MODERN RATA ENGINEERING FOR AI SYSTEMS â€“ SADAIA ACADEMY
-# Team Member: BUTHINA ALDHAFIAN, RAZAN ASIRI, HIND ALZAHRANI.
+#Program Name: MODERN RATA ENGINEERING FOR AI SYSTEMS – SADAIA ACADEMY
+#Team Member: BUTHINA ALDHAFIAN (1075589604), RAZAN ASIRI()< HIND ALZAHRANI (1076306214).
 # Real-Time Customer Support Intelligence Platform
 
 This capstone project uses the Kaggle **Customer Support on Twitter** dataset to build an end-to-end customer support intelligence platform.
@@ -52,3 +52,20 @@ redpanda start --overprovisioned --smp 1 --memory 1G
 ```
 
 Then run the producer and consumer scripts.
+
+## OpenLineage Update
+
+The project now emits a real OpenLineage run lifecycle instead of only initializing the client.
+
+The lineage implementation creates:
+- `RunEvent` with `RunState.START` before the pipeline runs.
+- `RunEvent` with `RunState.COMPLETE` after the Delta table is written.
+- `InputDataset(namespace="kafka://localhost:9092", name="customer_tickets")`.
+- `OutputDataset(namespace="delta://content/delta", name="silver_tweets")`.
+
+See:
+
+```text
+lineage/openlineage_run_lifecycle.py
+```
+
